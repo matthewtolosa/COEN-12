@@ -1,0 +1,28 @@
+/*Report for Big O run times of functions for application one
+
+Matthew Tolosa 
+COEN 12: Data Structures 
+15 March, 2019 
+
+The data structure that I chose for application one was a sorted array that points 
+to student stucts at each index. I chose this data structure because application one 
+has frequent calls to maxAgeGap and also searchAge. Thus a sorted array allows for the worst
+case big O run time for maxAgeGap to be O(1) since the array is sorted. Also for searching
+the worst case is O(logn). The reason I didn't do hash table was because the expected
+for searching is O(1) but the worst case is O(n). Also, finding the largest ID
+may take O(n) times, and so does searching for the smallest ID. A linked list wouldn't work 
+either because you dont have direct access to the "middle" node. You would have to 
+traverse the linked list using the next pointers which takes a longer time. 
+If you had a doubly-circular linked list than you could get O(1) for the maxAgeGap call, but application two also requires frequent calls to search which linked list isn't great for. 
+
+
+
+Big O Run-Times:
+createDataSet: O(1)
+destroyDataSet: O(n)
+searchAge: O(logn)
+insertion: O(n)
+deletion: O(n)
+maxAgeGap: O(1)
+
+*/
