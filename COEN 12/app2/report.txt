@@ -1,0 +1,22 @@
+/*Report for Big O run-times for application two
+
+Matthew Tolosa 
+15 March, 2019 
+COEN 12: Data Structures 
+
+The data structure that I used was a sorted array that points to a student struct 
+at each index of the array. The array is sorted by id. Because the second application 
+has frequent calls to search, then I wanted to optimize that big O run time. Therefore 
+I used a sorted array because I could use binary search which has a worst case big O run
+time of O(logn). I also considered using a hash table for my data structure because the 
+expected big O run time for searching is O(1). However that is only if you have no 
+collisions, thus the worst case big O run time is O(n). 
+
+
+Big O Run-Times:
+createDataSet: O(1)
+destroyDataSet: O(n)
+searchID: O(logn)
+insertion: O(n)
+deletion: O(n)
+*/
